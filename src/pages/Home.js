@@ -26,7 +26,7 @@ export default function App() {
               <li>Create /book/:id page</li>
               <li>Edit BookCard component</li>
               <li>Inside /user/:id page create button to delete user from database</li>
-              {/* <li>Save a digital transaction proof of a rating</li> */}
+                <li>Save a digital transaction proof of a rating</li>
             </ul>
           </div>
           <div className="col-md-4">
@@ -41,20 +41,6 @@ export default function App() {
             <span className="text-decoration-underline">Demo and answering to questions of the second part of the project (Frontend)</span> <strong>December 17</strong>.</p>
           </div>
         </div>
-        {/* <div className="row mt-5">
-          <h3 className="pb-3 mb-4 font-italic border-bottom">Digital Wallet (Leather)</h3>
-          <div className="col-sm-6">
-            <ul className="list-group">
-              <li className="list-group-item">1. <a href="">Install the extension for Chrome, Brave or Firefox</a></li>
-              <li className="list-group-item">2. Open extension in your browser</li>
-              <li className="list-group-item">3. Select "Create a new wallet"</li>
-              <li className="list-group-item">4. If you've selected "Create a wallet", follow the instructions provided to generate and save a 24-word Secret Key.</li>
-              <li className="list-group-item">5. Change Network to "Testnet"</li>
-              <li className="list-group-item">6. <a href="https://explorer.hiro.so/sandbox/faucet?chain=testnet">Request STX from faucet.</a></li>
-            </ul>
-          </div>
-        </div> */}
-
       </div>
     </React.Fragment>
   )
