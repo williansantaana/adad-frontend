@@ -5,7 +5,7 @@ import {userSession, authenticate} from '../auth';
 const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-      <div className="container">
+      <section className="container">
         <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll"/>
         <Navbar.Collapse id="navbarScroll">
           <Nav>
@@ -15,7 +15,7 @@ const Navigation = () => {
             <NavLink eventKey="4" as={Link} to="/bookstores">Bookstores</NavLink>
           </Nav>
         </Navbar.Collapse>
-      </div>
+      </section>
     </Navbar>
   );
 }

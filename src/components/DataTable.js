@@ -29,7 +29,7 @@ const DataTable = ({ columns, data, onView, onEdit, onDelete, useIcons }) => {
               ))}
               {(onView || onEdit || onDelete) && (
                 <td style={ { width: '0' } }>
-                  <div className='d-flex justify-content-between gap-2'>
+                  <section className='d-flex justify-content-between gap-2'>
                     <ButtonGroup>
                       {onView && (
                         <Button variant="outline-primary"
@@ -56,7 +56,7 @@ const DataTable = ({ columns, data, onView, onEdit, onDelete, useIcons }) => {
                         </Button>
                       )}
                     </ButtonGroup>
-                  </div>
+                  </section>
                 </td>
               )}
             </tr>

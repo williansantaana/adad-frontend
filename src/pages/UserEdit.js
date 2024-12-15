@@ -175,7 +175,7 @@ export default function EditUser() {
           </Form.Group>
         </section>
 
-        <div className="d-flex justify-content-between align-items-center">
+        <section className="d-flex justify-content-between align-items-center">
           <h3>Reviews</h3>
           <Button variant="primary"
                   title='Add Review'
@@ -183,7 +183,7 @@ export default function EditUser() {
                   onClick={handleAddReview}>
             <FaPlus title={'Add Review'} />
           </Button>
-        </div>
+        </section>
         <Table striped bordered hover>
           <thead>
           <tr>

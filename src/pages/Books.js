@@ -55,7 +55,7 @@ export default function App() {
 
   return (
     <section className="container pt-5 pb-5">
-      <div className="d-flex justify-content-between align-items-center mb-4">
+      <section className="d-flex justify-content-between align-items-center mb-4">
         <h2>Books</h2>
         <Button variant="primary"
                 title='Add New Book'
@@ -63,7 +63,7 @@ export default function App() {
                 onClick={handleAddBook}>
           Add New Book
         </Button>
-      </div>
+      </section>
       <CardGroup>
         <Row xs={1} md={2} className="d-flex justify-content-around gap-5">
           {books && books.map((book) => {

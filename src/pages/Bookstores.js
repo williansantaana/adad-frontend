@@ -89,7 +89,7 @@ export default function App() {
   }
 
   return (
-    <div className="container pt-5 pb-5">
+    <section className="container pt-5 pb-5">
       <h2>Bookstores Page</h2>
 
       {/* Search Section */}
@@ -97,7 +97,7 @@ export default function App() {
         <Accordion.Item eventKey="0">
           <Accordion.Header>Search Bookstores by Location</Accordion.Header>
           <Accordion.Body>
-            <div style={{ height: "400px" }}>
+            <section style={{ height: "400px" }}>
               <MapContainer center={[38.7223, -9.1393]} zoom={13} style={{ height: "100%", width: "100%" }}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 {points.map((point, index) => (
@@ -108,8 +108,8 @@ export default function App() {
                 {points.length > 1 && <Polyline positions={points} />}
                 <MapClickHandler />
               </MapContainer>
-            </div>
-            <div className="mt-3">
+            </section>
+            <section className="mt-3">
               <label>Max Distance (meters):</label>
               <input
                 type="number"
@@ -129,7 +129,7 @@ export default function App() {
                   Clear Points
                 </Button>
               )}
-            </div>
+            </section>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
@@ -147,6 +147,6 @@ export default function App() {
       {(pagination && pagination.totalPages > 1) && (
         <Pagination pagination={pagination} onPageChange={handlePageChange} />
       )}
-    </div>
+    </section>
   );
 }
